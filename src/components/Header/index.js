@@ -25,7 +25,7 @@ const Header = () => {
       <div>
         {/* logo */}
         <a href="/">
-          <img src={logo} alt="notepad logo" />
+          <img src={logo} alt="notepad logo" width="200px" />
         </a>
       </div>
 

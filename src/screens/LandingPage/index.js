@@ -43,7 +43,7 @@ const LandingPage = () => {
               repeat: Infinity,
             }}
             src={computer}
-            className="h-96"
+            width="750px"
           />
         </div>
       </div>
