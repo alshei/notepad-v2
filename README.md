@@ -1,6 +1,6 @@
 ## Notepad
 
-A note-taking application created with MondoDB, Express.js, React.js, Node.js, and Tailwind.css. Users can sign up with an account and create/delete notes. These are displayed on a page and stored in a database. 
+A note-taking CRUD application created with MondoDB, Express.js, React.js, Node.js, and Tailwind.css. Users can sign up with an account and create/delete notes. This is a project solely for the purpose of practicing and learning React, please feel free to use or fork this project for your own purposes. 
 
 Completed:
 
