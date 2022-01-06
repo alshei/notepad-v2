@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from "react";
-import { MagnifyingGlass, CaretDown, MoonStars, Sun } from "phosphor-react";
+import { MagnifyingGlass, MoonStars, Sun } from "phosphor-react";
 import classNames from "classnames";
-// import logo from "../../images/logo.svg";
+import logo from "../../images/logo.svg";
+import icon from "../../images/icon.jpg";
+import Dropdown from "../Dropdown";
 
-const Header = (props) => {
+const Header = () => {
   const [dark, setDark] = useState(true);
 
   const headerClass = (color) =>
     classNames({
-      "fixed w-full flex items-center justify-between": true,
-      "bg-indigo-900": color === null || color,
-      "bg-indigo-300": !color,
+      "fixed w-full flex flex-row items-center justify-between text-white h-20 pl-40 pr-40": true,
+      "bg-slate-800": color === null || color,
+      "bg-slate-400": !color,
     });
 
   useEffect(() => {
@@ -19,37 +21,43 @@ const Header = (props) => {
 
   return (
     <div className={headerClass(dark)}>
-      <a href="/" class="logo">
-        <img src={props.img} alt="notepad logo" />
-      </a>
+      <div>
+        <a href="/">
+          <img src={logo} alt="notepad logo" />
+        </a>
+      </div>
 
-      <ul className="list-none flex">
-        <li className="flex items-center p-2 no-underline text-black">
-          <div className="search">
-            <MagnifyingGlass size="1.3rem" />
-            <input type="text" placeholder="type to search..."></input>
-          </div>
-        </li>
-        <li className="nav-item">
-          <button onClick={() => setDark(!dark)}>
-            {dark ? <MoonStars size="1.3rem" /> : <Sun size="1.3rem" />}
-          </button>
-        </li>
-        <li className="nav-item">
+      <div>
+        <div className="flex items-center bg-white rounded-lg p-1.5 drop-shadow-lg text-black">
+          <MagnifyingGlass size="1.3rem" />
+          <input
+            className="placeholder:text-black pl-1.5 pr-1.5 block sm:text-sm focus:outline-none"
+            placeholder="Type to search notes..."
+            type="text"
+            name="search"
+          />
+        </div>
+      </div>
+
+      <div className="w-64 flex flex-row items-center justify-between">
+        <div className="flex items-center rounded-lg pr-3 pl-3 pt-2 pb-2 font-bold hover:bg-slate-900">
           <a href="/mynotes">my notes</a>
-        </li>
-        <li className="nav-item">
-          <div className="dropdown">
-            <a href="#">
-              alina sheikh <CaretDown size="1.3rem" />
-            </a>
-            <div className="dropdown-content">
-              <a href="#">my profile</a>
-              <a href="#">logout</a>
-            </div>
-          </div>
-        </li>
-      </ul>
+        </div>
+
+        <button onClick={() => setDark(!dark)}>
+          {dark ? <MoonStars size="1.8rem" /> : <Sun size="1.8rem" />}
+        </button>
+
+        <div className="pl-2">
+          <img
+            src={icon}
+            alt="profile"
+            className="flex items-center rounded-full w-10 h-10"
+          />
+
+          <Dropdown />
+        </div>
+      </div>
     </div>
   );
 };
