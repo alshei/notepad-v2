@@ -11,10 +11,10 @@ In-Progress:
 
 * overall functionality
 * setup backend and database
-* "sign up" and "log in" pages
-* "my notes" and "create note" pages
-* dark mode
-* responsive design different screen sizes
+* "sign up", "log in" pages
+* "my notes", "create note" pages
+* dark/light mode toggle
+* responsive design for different screen sizes
 
 ## Screenshots
 
