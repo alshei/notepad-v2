@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { MagnifyingGlass, MoonStars, Sun } from "phosphor-react";
 import logo from "../../images/logo.svg";
 import Dropdown from "../Dropdown";
-import { NavLink } from "../Buttons";
+import { Primary, Secondary, NavLink } from "../Buttons";
 
-// for dropdown links
+// options for dropdown links
 const options = [
   { label: "edit profile", link: "#" },
   { label: "settings", link: "#" },
@@ -30,8 +30,9 @@ const Header = () => {
       </div>
 
       <div>
+        {/* WHEN USER IS LOGGED IN */}
         {/* search bar */}
-        <div className="flex items-center bg-white rounded-lg p-1.5 drop-shadow-lg text-black">
+        {/* <div className="flex items-center bg-white rounded-lg p-1.5 drop-shadow-lg text-black">
           <MagnifyingGlass size="1.3rem" />
           <input
             className="placeholder:text-slate-500 pl-1.5 pr-1.5 block sm:text-sm focus:outline-none"
@@ -39,7 +40,7 @@ const Header = () => {
             type="text"
             name="search"
           />
-        </div>
+        </div> */}
       </div>
 
       <div className="flex flex-row items-center gap-5 justify-between">
@@ -48,14 +49,20 @@ const Header = () => {
           {dark ? <MoonStars size="1.8rem" /> : <Sun size="1.8rem" />}
         </button>
 
+        {/* WHEN USER IS LOGGED IN */}
         {/* navigation links */}
-        <NavLink option="my notes" link="/mynotes" />
+        {/* <NavLink option="my notes" link="/mynotes" />
+        <NavLink option="create note" link="#" /> */}
 
-        <NavLink option="create note" link="#" />
+        {/* WHEN USER IS NOT LOGGED IN */}
+        {/* sign up and log in buttons */}
+        <Primary option="sign up" link="#" />
+        <Secondary option="log in" link="#" />
 
         <div>
+          {/* WHEN USER IS LOGGED IN */}
           {/* dropdown links */}
-          <Dropdown options={options} />
+          {/* <Dropdown options={options} /> */}
         </div>
       </div>
     </div>
