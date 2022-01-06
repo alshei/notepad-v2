@@ -1,6 +1,6 @@
 ## Notepad
 
-A note-taking application created with MondoDB, Express, React, and Node. Users can sign up with an account and create/delete notes. These are displayed on a page and stored in a database. 
+A note-taking application created with MondoDB, Express.js, React.js, Node.js, and Tailwind.css. Users can sign up with an account and create/delete notes. These are displayed on a page and stored in a database. 
 
 Completed:
 
