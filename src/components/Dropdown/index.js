@@ -13,7 +13,7 @@ const Dropdown = () => {
         <img
           src={icon}
           alt="profile"
-          className="flex items-center rounded-full w-10 h-10"
+          className="flex items-center rounded-full w-10 h-10 cursor-pointer hover:outline outline-2"
           onClick={handleClick}
         />
 
