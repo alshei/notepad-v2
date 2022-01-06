@@ -53,7 +53,7 @@ const Header = () => {
 
         <NavLink option="create note" link="#" />
 
-        <div className="pl-2">
+        <div>
           {/* dropdown links */}
           <Dropdown options={options} />
         </div>
