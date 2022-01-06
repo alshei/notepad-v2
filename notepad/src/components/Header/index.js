@@ -3,15 +3,16 @@ import { MagnifyingGlass, MoonStars, Sun } from "phosphor-react";
 import classNames from "classnames";
 import logo from "../../images/logo.svg";
 import Dropdown from "../Dropdown";
+import { NavLink } from "../Buttons";
 
 const Header = () => {
   const [dark, setDark] = useState(true);
 
   const headerClass = (color) =>
     classNames({
-      "fixed w-full flex flex-row items-center justify-between text-white h-20 pl-56 pr-56": true,
-      "bg-slate-800": color === null || color,
-      "bg-slate-400": !color,
+      "fixed backdrop-blur-sm w-full flex flex-row items-center justify-between text-white h-20 pl-56 pr-56": true,
+      "bg-slate-800/50": color === null || color,
+      "bg-slate-400/50": !color,
     });
 
   useEffect(() => {
@@ -27,29 +28,29 @@ const Header = () => {
       </div>
 
       <div>
-        <div className="flex w-80 items-center bg-white rounded-lg p-1.5 drop-shadow-lg text-black">
+        <div className="flex items-center bg-white rounded-lg p-1.5 drop-shadow-lg text-black">
           <MagnifyingGlass size="1.3rem" />
           <input
-            className="placeholder:text-black pl-1.5 pr-1.5 block sm:text-sm focus:outline-none"
-            placeholder="Type to search notes..."
+            className="placeholder:text-slate-500 pl-1.5 pr-1.5 block sm:text-sm focus:outline-none"
+            placeholder="search notes..."
             type="text"
             name="search"
           />
         </div>
       </div>
 
-      <div className="w-80 flex flex-row items-center justify-between">
+      <div className="flex flex-row items-center gap-5 justify-between">
         <button onClick={() => setDark(!dark)}>
           {dark ? <MoonStars size="1.8rem" /> : <Sun size="1.8rem" />}
         </button>
 
-        <div className="flex items-center rounded-lg pr-3 pl-3 pt-2 pb-2 font-bold hover:bg-slate-900">
-          <a href="/mynotes">my notes</a>
-        </div>
+        <a href="/mynotes">
+          <NavLink text="my notes" />
+        </a>
 
-        <div className="flex items-center rounded-lg pr-3 pl-3 pt-2 pb-2 font-bold hover:bg-slate-900">
-          <a href="#">create note</a>
-        </div>
+        <a href="#">
+          <NavLink text="create note" />
+        </a>
 
         <div className="pl-2">
           <Dropdown />

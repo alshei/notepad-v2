@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import icon from "../../images/icon.jpg";
 
-const Dropdown = ({ options }) => {
+const Dropdown = () => {
   const [showOptions, setShowOptions] = useState(false);
   const handleClick = () => {
     setShowOptions(!showOptions);
