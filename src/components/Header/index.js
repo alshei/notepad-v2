@@ -32,7 +32,7 @@ const Header = () => {
       <div>
         {/* WHEN USER IS LOGGED IN */}
         {/* search bar */}
-        {/* <div className="flex items-center bg-white rounded-lg p-1.5 drop-shadow-lg text-black">
+        <div className="flex items-center bg-white rounded-lg p-1.5 drop-shadow-lg text-black">
           <MagnifyingGlass size="1.3rem" />
           <input
             className="placeholder:text-slate-500 pl-1.5 pr-1.5 block sm:text-sm focus:outline-none"
@@ -40,7 +40,7 @@ const Header = () => {
             type="text"
             name="search"
           />
-        </div> */}
+        </div>
       </div>
 
       <div className="flex flex-row items-center gap-5 justify-between">
@@ -51,18 +51,18 @@ const Header = () => {
 
         {/* WHEN USER IS LOGGED IN */}
         {/* navigation links */}
-        {/* <NavLink option="my notes" link="/mynotes" />
-        <NavLink option="create note" link="#" /> */}
+        <NavLink option="my notes" link="/mynotes" />
+        <NavLink option="create note" link="#" />
 
         {/* WHEN USER IS NOT LOGGED IN */}
         {/* sign up and log in buttons */}
-        <Primary option="sign up" link="#" />
-        <Secondary option="log in" link="#" />
+        {/* <Primary option="sign up" link="#" />
+        <Secondary option="log in" link="#" /> */}
 
         <div>
           {/* WHEN USER IS LOGGED IN */}
           {/* dropdown links */}
-          {/* <Dropdown options={options} /> */}
+          <Dropdown options={options} />
         </div>
       </div>
     </div>
