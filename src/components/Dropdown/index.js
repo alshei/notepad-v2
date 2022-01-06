@@ -19,7 +19,7 @@ const Dropdown = () => {
 
         {showOptions && (
           <div
-            className="origin-top-right absolute right-0 mt-2 w-32 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+            className="origin-top-right absolute right-0 mt-2 w-32 rounded-md shadow-lg bg-mauve ring-1 ring-black ring-opacity-5 focus:outline-none"
             role="menu"
             aria-orientation="vertical"
             aria-labelledby="menu-button"
@@ -28,7 +28,7 @@ const Dropdown = () => {
             <div class="py-1" role="none">
               <a
                 href="#"
-                className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
+                className="text-white block px-4 py-2 text-sm hover:bg-slate-800"
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-0"
@@ -37,7 +37,7 @@ const Dropdown = () => {
               </a>
               <a
                 href="#"
-                className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
+                className="text-white block px-4 py-2 text-sm hover:bg-slate-800"
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-1"
@@ -46,7 +46,7 @@ const Dropdown = () => {
               </a>
               <a
                 href="#"
-                className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
+                className="text-white block px-4 py-2 text-sm hover:bg-slate-800"
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-1"
