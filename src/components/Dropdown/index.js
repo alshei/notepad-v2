@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import icon from "../../images/icon.jpg";
 
-const Dropdown = () => {
+const Dropdown = ({ options }) => {
   const [showOptions, setShowOptions] = useState(false);
   const handleClick = () => {
     setShowOptions(!showOptions);
@@ -22,37 +22,21 @@ const Dropdown = () => {
             className="origin-top-right absolute right-0 mt-2 w-32 rounded-md shadow-lg bg-mauve ring-1 ring-black ring-opacity-5 focus:outline-none"
             role="menu"
             aria-orientation="vertical"
-            aria-labelledby="menu-button"
+            aria-labelledby="menubutton"
             tabindex="-1"
           >
             <div class="py-1" role="none">
-              <a
-                href="#"
-                className="text-white block px-4 py-2 text-sm hover:bg-slate-800"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-0"
-              >
-                edit profile
-              </a>
-              <a
-                href="#"
-                className="text-white block px-4 py-2 text-sm hover:bg-slate-800"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-1"
-              >
-                settings
-              </a>
-              <a
-                href="#"
-                className="text-white block px-4 py-2 text-sm hover:bg-slate-800"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-1"
-              >
-                log out
-              </a>
+              {options &&
+                options.map((option) => (
+                  <a
+                    href={option.link}
+                    className="text-white block px-4 py-2 text-sm hover:bg-slate-800"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    {option.label}
+                  </a>
+                ))}
             </div>
           </div>
         )}

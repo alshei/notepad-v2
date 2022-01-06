@@ -30,9 +30,7 @@ const LandingPage = () => {
                 name="search"
               />
             </div>
-            <a href="#">
-              <Primary text="get started" />
-            </a>
+            <Primary option="get started" link="#" />
           </div>
         </div>
 
