@@ -19,6 +19,7 @@
     "web-vitals": "^2.1.2"
   },
   "scripts": {
+    "server": "nodemon ./backend/server.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -46,5 +47,16 @@
     "autoprefixer": "^10.4.1",
     "postcss": "^8.4.5",
     "tailwindcss": "^3.0.11"
+  },
+  "description": "A note-taking CRUD application created with MondoDB, Express.js, React.js, Node.js, and Tailwind.css. Users can sign up with an account and create/delete notes. This is a project solely for the purpose of practicing and learning React, please feel free to use or fork this project for your own purposes.",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alshei/notepad-v2.git"
+  },
+  "author": "Alina Sheikh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alshei/notepad-v2/issues"
   }
 }
