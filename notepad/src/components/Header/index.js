@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { MagnifyingGlass, MoonStars, Sun } from "phosphor-react";
 import classNames from "classnames";
 import logo from "../../images/logo.svg";
-import icon from "../../images/icon.jpg";
 import Dropdown from "../Dropdown";
 
 const Header = () => {
@@ -10,7 +9,7 @@ const Header = () => {
 
   const headerClass = (color) =>
     classNames({
-      "fixed w-full flex flex-row items-center justify-between text-white h-20 pl-40 pr-40": true,
+      "fixed w-full flex flex-row items-center justify-between text-white h-20 pl-56 pr-56": true,
       "bg-slate-800": color === null || color,
       "bg-slate-400": !color,
     });
@@ -28,7 +27,7 @@ const Header = () => {
       </div>
 
       <div>
-        <div className="flex items-center bg-white rounded-lg p-1.5 drop-shadow-lg text-black">
+        <div className="flex w-80 items-center bg-white rounded-lg p-1.5 drop-shadow-lg text-black">
           <MagnifyingGlass size="1.3rem" />
           <input
             className="placeholder:text-black pl-1.5 pr-1.5 block sm:text-sm focus:outline-none"
@@ -39,22 +38,20 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="w-64 flex flex-row items-center justify-between">
-        <div className="flex items-center rounded-lg pr-3 pl-3 pt-2 pb-2 font-bold hover:bg-slate-900">
-          <a href="/mynotes">my notes</a>
-        </div>
-
+      <div className="w-80 flex flex-row items-center justify-between">
         <button onClick={() => setDark(!dark)}>
           {dark ? <MoonStars size="1.8rem" /> : <Sun size="1.8rem" />}
         </button>
 
-        <div className="pl-2">
-          <img
-            src={icon}
-            alt="profile"
-            className="flex items-center rounded-full w-10 h-10"
-          />
+        <div className="flex items-center rounded-lg pr-3 pl-3 pt-2 pb-2 font-bold hover:bg-slate-900">
+          <a href="/mynotes">my notes</a>
+        </div>
 
+        <div className="flex items-center rounded-lg pr-3 pl-3 pt-2 pb-2 font-bold hover:bg-slate-900">
+          <a href="#">create note</a>
+        </div>
+
+        <div className="pl-2">
           <Dropdown />
         </div>
       </div>
