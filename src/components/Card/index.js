@@ -4,8 +4,8 @@ import { NotePencil, Trash } from "phosphor-react";
 const Card = (props) => {
   return (
     <div>
-      <div className="w-full flex flex-row justify-between items-center rounded-t-lg p-6 bg-slate-800 drop-shadow-md text-white">
-        <p className="">{props.title}</p>
+      <div className="w-full flex flex-row justify-between items-center rounded-t-lg p-6 bg-slate-900 drop-shadow-md text-white">
+        <p className="font-ptserif text-lg">{props.title}</p>
         <div className="flex flex-row items-center gap-5 justify-between">
           <a href={props.editlink}>
             <NotePencil size="1.5rem" />

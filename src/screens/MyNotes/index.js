@@ -15,11 +15,11 @@ const MyNotes = () => {
     <div className="w-screen h-screen">
       <Title title="welcome back, alina!" />
 
-      <div className="mt-3 w-full flex flex-row justify-center pl-56 pr-56">
+      <div className="mt-10 w-full flex flex-row justify-center pl-56 pr-56">
         <Primary option="create note" link="createnote" />
       </div>
 
-      <div className="pt-20 pb-40 w-full grid grid-cols-2 gap-10 justify-evenly pl-56 pr-56">
+      <div className="pt-16 pb-40 w-full grid grid-cols-2 gap-10 justify-evenly pl-56 pr-56">
         {notes.map((note) => (
           <Card
             title={note.title}

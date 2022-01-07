@@ -7,7 +7,6 @@ const Title = ({ title }) => {
         <h1 className="font-ptserif font-bold text-5xl text-apricot">
           {title}
         </h1>
-        <hr className="mt-3 text-mauve" />
       </div>
     </div>
   );
