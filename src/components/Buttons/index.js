@@ -19,7 +19,7 @@ export const Secondary = ({ option, link }) => {
 
 export const NavLink = ({ option, link }) => {
   return (
-    <button className="flex items-center rounded-lg pr-3 pl-3 pt-2 pb-2 font-bold hover:bg-slate-900/50 text-white">
+    <button className="flex items-center rounded-lg pr-3 pl-3 pt-2 pb-2 font-bold hover:bg-slate-900/50  text-white">
       <Link to={link}>{option}</Link>
     </button>
   );
