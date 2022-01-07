@@ -1,29 +1,28 @@
 const notes = [
   {
     _id: "1",
-    title: "Day 1 of college",
+    title: "Coding is fun!",
     content:
-      "I made a few new friends and introduced myself to a lot of new teachers.",
-    category: "College",
+      "React.js is pretty based, tbh. I can be a dumbie sometimes, though.",
+    category: "Learning",
   },
   {
     _id: "2",
-    title: "Learned some Node JS",
-    content: "Learned how to create a server in node JS and my first API",
-    category: "Learning",
+    title: "the softest bean in the galaxy",
+    content: "koichi is a sleepy little beaaan",
+    category: "Thoughts",
   },
   {
     _id: "3",
-    title: "Watched some Anime",
-    content: "Finished 2 seasons of Attack on Titan and My Hero academia.",
-    category: "Entertainment",
+    title: "This is some content.",
+    content: "And some very riveting content it is!",
+    category: "Thoughts",
   },
   {
     _id: "4",
-    title: "Started React JS",
-    content:
-      "Made my first App in React JS, feels awesome to learn something new. I aim to be a full stack dev someday",
-    category: "Learning",
+    title: "peepeepoopoo check",
+    content: "I am a very entertaining individual.",
+    category: "Entertainment",
   },
 ];
 
