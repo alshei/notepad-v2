@@ -30,7 +30,7 @@ const Header = () => {
         </Link>
       </div>
 
-      <div>
+      <div className="flex flex-row items-center gap-5 justify-between">
         {/* WHEN USER IS LOGGED IN */}
         {/* search bar */}
         <div className="flex items-center bg-white rounded-lg p-1.5 drop-shadow-lg text-black">
@@ -42,9 +42,7 @@ const Header = () => {
             name="search"
           />
         </div>
-      </div>
 
-      <div className="flex flex-row items-center gap-5 justify-between">
         {/* toggle theme icon */}
         <button onClick={() => setDark(!dark)}>
           {dark ? <MoonStars size="1.8rem" /> : <Sun size="1.8rem" />}

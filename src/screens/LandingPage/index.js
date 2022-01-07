@@ -30,7 +30,7 @@ const LandingPage = () => {
                 name="search"
               />
             </div>
-            <Primary option="get started" link="#" />
+            <Primary option="get started" link="signup" />
           </div>
         </div>
 
