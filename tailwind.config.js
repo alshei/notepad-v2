@@ -11,7 +11,6 @@ module.exports = {
         bubblegum: "#e76d8a",
         mauve: "#6f4367",
         lavender: "#a69aca",
-        cotton: "#839eb7",
       },
     },
   },
