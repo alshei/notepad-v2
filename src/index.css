@@ -25,3 +25,26 @@ code {
   font-family: "Inter";
   font-size: 14px;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #0f172a;
+}
+
+/* handle */
+::-webkit-scrollbar-thumb {
+  background: #6f4367;
+  border-radius: 100vh;
+}
+
+/* handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a69aca;
+}
