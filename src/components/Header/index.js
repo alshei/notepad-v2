@@ -3,12 +3,13 @@ import { MagnifyingGlass, MoonStars, Sun } from "phosphor-react";
 import logo from "../../images/logo.svg";
 import Dropdown from "../Dropdown";
 import { Primary, Secondary, NavLink } from "../Buttons";
+import { Link } from "react-router-dom";
 
 // options for dropdown links
 const options = [
-  { label: "edit profile", link: "#" },
-  { label: "settings", link: "#" },
-  { label: "log out", link: "#" },
+  { label: "edit profile", link: "/editprofile" },
+  { label: "settings", link: "/settings" },
+  { label: "log out", link: "/logout" },
 ];
 
 // change icon for when toggling theme
@@ -24,9 +25,9 @@ const Header = () => {
     <div className="bg-slate-800/50 fixed backdrop-blur-sm w-full flex flex-row items-center justify-between text-white h-20 pl-56 pr-56">
       <div>
         {/* logo */}
-        <a href="/">
+        <Link to="/">
           <img src={logo} alt="notepad logo" width="200px" />
-        </a>
+        </Link>
       </div>
 
       <div>
@@ -52,7 +53,7 @@ const Header = () => {
         {/* WHEN USER IS LOGGED IN */}
         {/* navigation links */}
         <NavLink option="my notes" link="/mynotes" />
-        <NavLink option="create note" link="#" />
+        <NavLink option="create note" link="/createnote" />
 
         {/* WHEN USER IS NOT LOGGED IN */}
         {/* sign up and log in buttons */}

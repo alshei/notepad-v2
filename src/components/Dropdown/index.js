@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import icon from "../../images/icon.jpg";
+import { Link } from "react-router-dom";
 
 const Dropdown = ({ options }) => {
   const [showOptions, setShowOptions] = useState(false);
@@ -28,14 +29,14 @@ const Dropdown = ({ options }) => {
             <div class="py-1" role="none">
               {options &&
                 options.map((option) => (
-                  <a
-                    href={option.link}
+                  <Link
+                    to={option.link}
                     className="text-white block px-4 py-2 text-sm hover:bg-slate-800"
                     role="menuitem"
                     tabindex="-1"
                   >
                     {option.label}
-                  </a>
+                  </Link>
                 ))}
             </div>
           </div>
