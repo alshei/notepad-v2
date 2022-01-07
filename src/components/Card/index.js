@@ -27,9 +27,14 @@ const Card = (props) => {
       {/* card expanded / content section */}
       {showNote && (
         <div className="w-full rounded-b-lg p-6 bg-mauve drop-shadow-md">
-          <div class="inline-flex items-center justify-center px-2 py-1 text-xs font-semibold leading-none text-white bg-bubblegum rounded-full mb-6">
-            # {props.category}
-          </div>
+          {props.category.map((c) => {
+            return (
+              <div class="inline-flex mr-2 items-center justify-center px-2 py-1 text-xs font-semibold leading-none text-white bg-bubblegum rounded-full mb-6">
+                # {c}
+              </div>
+            );
+          })}
+
           <p className="mb-6 text-white">{props.content}</p>
           <p className="italic text-sm text-apricot">— created on date.</p>
         </div>
