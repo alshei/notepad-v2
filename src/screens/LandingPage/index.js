@@ -1,5 +1,5 @@
 import React from "react";
-import computer from "../../images/computer.svg";
+import computer from "../../images/computer.png";
 import { motion } from "framer-motion";
 import { Primary } from "../../components/Buttons";
 
