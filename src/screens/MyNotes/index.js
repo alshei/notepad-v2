@@ -11,9 +11,20 @@ const MyNotes = () => {
     }
   };
 
+  const user = "alina";
+
   return (
     <div className="w-screen h-screen">
-      <Title title="welcome back, alina!" />
+      <Title
+        title={
+          <>
+            welcome back,{" "}
+            <p className="inline-flex italic font-ptserif font-bold text-5xl text-apricot">
+              {user}!
+            </p>
+          </>
+        }
+      />
 
       <div className="mt-10 w-full flex flex-row justify-center pl-56 pr-56">
         <Primary option="create note" link="createnote" />
