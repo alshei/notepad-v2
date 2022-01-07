@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "../../components/Title";
 import { Primary } from "../../components/Buttons";
+import CardTitle from "../../components/CardTitle";
 import Card from "../../components/Card";
 import notes from "../../data/notes";
 
@@ -15,20 +16,22 @@ const MyNotes = () => {
     <div className="w-screen h-screen">
       <Title title="welcome back, alina!" />
 
-      <div className="mt-10 w-full flex flex-row justify-center pl-56 pr-56">
-        <Primary option="create note" link="createnote" />
-      </div>
+      <div className="pt-16 pb-40 w-full grid grid-cols-3 gap-5 pl-56 pr-56">
+        <div className="flex flex-col gap-3">
+          {notes.map((note) => (
+            <CardTitle
+              title={note.title}
+              editlink={`/note/${note._id}`}
+              deletefunc={() => deleteHandler(note._id)}
+            />
+          ))}
+        </div>
 
-      <div className="pt-16 pb-40 w-full flex flex-col gap-10 pl-80 pr-80">
-        {notes.map((note) => (
-          <Card
-            title={note.title}
-            editlink={`/note/${note._id}`}
-            deletefunc={() => deleteHandler(note._id)}
-            content={note.content}
-            category={note.category}
-          />
-        ))}
+        <div className="col-span-2">
+          {notes.map((note) => (
+            <Card content={note.content} />
+          ))}
+        </div>
       </div>
     </div>
   );
