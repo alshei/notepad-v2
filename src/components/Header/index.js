@@ -31,8 +31,7 @@ const Header = () => {
       </div>
 
       <div className="flex flex-row items-center gap-5 justify-between">
-        {/* WHEN USER IS LOGGED IN */}
-        {/* search bar */}
+        {/* WHEN USER IS LOGGED IN - search bar */}
         <div className="flex items-center bg-white rounded-lg p-1.5 drop-shadow-lg text-black">
           <MagnifyingGlass size="1.5rem" />
           <input
@@ -48,19 +47,16 @@ const Header = () => {
           {dark ? <MoonStars size="1.8rem" /> : <Sun size="1.8rem" />}
         </button>
 
-        {/* WHEN USER IS LOGGED IN */}
-        {/* navigation links */}
+        {/* WHEN USER IS LOGGED IN - navigation links */}
         <NavLink option="my notes" link="/mynotes" />
         <NavLink option="create note" link="/createnote" />
 
-        {/* WHEN USER IS NOT LOGGED IN */}
-        {/* sign up and log in buttons */}
+        {/* WHEN USER IS NOT LOGGED IN - sign up and log in buttons */}
         {/* <Primary option="sign up" link="#" />
         <Secondary option="log in" link="#" /> */}
 
         <div>
-          {/* WHEN USER IS LOGGED IN */}
-          {/* dropdown links */}
+          {/* WHEN USER IS LOGGED IN - dropdown links */}
           <Dropdown options={options} />
         </div>
       </div>
