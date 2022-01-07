@@ -19,7 +19,7 @@ const MyNotes = () => {
         <Primary option="create note" link="createnote" />
       </div>
 
-      <div className="pt-16 pb-40 w-full grid grid-cols-2 gap-10 justify-evenly pl-56 pr-56">
+      <div className="pt-16 pb-40 w-full flex flex-col gap-10 pl-80 pr-80">
         {notes.map((note) => (
           <Card
             title={note.title}
