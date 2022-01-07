@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     // navbar
-    <div className="bg-slate-800/50 fixed backdrop-blur-sm w-full flex flex-row items-center justify-between text-white h-20 pl-56 pr-56">
+    <div className="bg-slate-800/50 fixed backdrop-blur-sm w-full flex flex-row items-center justify-between text-white h-20 pl-56 pr-56 z-10">
       <div>
         {/* logo */}
         <Link to="/">

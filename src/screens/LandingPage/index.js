@@ -5,13 +5,7 @@ import { Primary } from "../../components/Buttons";
 
 const LandingPage = () => {
   return (
-    <div
-      className="w-screen h-screen"
-      style={{
-        background: "radial-gradient(ellipse at 5% 5%, #6f4367, #0f172a)",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
+    <div className="w-screen h-screen">
       <div className="w-full h-full flex flex-row items-center justify-around pl-56 pr-56">
         <div className="flex flex-col justify-center gap-4">
           <h1 className="font-ptserif italic font-bold text-6xl text-apricot">

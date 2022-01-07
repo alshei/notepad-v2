@@ -4,7 +4,7 @@ import { GithubLogo, LinkedinLogo } from "phosphor-react";
 const Footer = () => {
   return (
     <footer>
-      <div className="bg-slate-900 w-full flex flex-row items-center justify-start gap-20 h-20 pl-56 pr-56">
+      <div className="fixed bottom-0 bg-slate-900 w-full flex flex-row items-center justify-start gap-20 h-20 pl-56 pr-56">
         <div className="flex flex-row items-center justify-between gap-5 text-slate-100/80">
           <p className="text-sm">© 2022 Alina Sheikh</p>
           <a href="https://github.com/alshei" target="_blank">
