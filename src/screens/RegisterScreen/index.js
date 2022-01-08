@@ -47,7 +47,7 @@ const RegisterScreen = () => {
             id="signup-pw-confirm"
             placeholder="Confirm password"
             type="password"
-            errorMsg="Error"
+            errorMsg="Error here"
           />
         </Form>
       </div>
