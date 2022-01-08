@@ -1,9 +1,11 @@
 const express = require("express");
 const notes = require("./data/notes");
 const dotenv = require("dotenv");
+const connectDB = require("./config/database");
 
 const app = express();
 dotenv.config();
+connectDB();
 
 // API endpoint; brings data from backend to frontend
 app.get("/", (req, res) => {
