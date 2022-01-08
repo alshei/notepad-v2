@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Primary } from "../Buttons";
 
 const Form = () => {
@@ -65,7 +66,16 @@ const Form = () => {
       </div>
 
       <div className="p-3 flex justify-between items-center">
-        <p className="text-white text-sm">Have an account? Log in here.</p>
+        <p className="text-white text-sm">
+          <>
+            Have an account?{" "}
+            <Link to="login">
+              <p className="inline-flex text-sm text-lavender hover:text-white">
+                Log in here.
+              </p>
+            </Link>
+          </>
+        </p>
         <Primary option="create account" link="createnote" />
       </div>
     </form>
