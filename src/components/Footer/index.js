@@ -1,5 +1,5 @@
 import React from "react";
-import { GithubLogo, LinkedinLogo } from "phosphor-react";
+import { GithubLogo, LinkedinLogo, TwitterLogo } from "phosphor-react";
 
 const Footer = () => {
   return (
@@ -12,12 +12,19 @@ const Footer = () => {
               <GithubLogo size="1.5rem" />
             </div>
           </a>
+
           <a
             href="https://www.linkedin.com/in/alina-sheikh-a59a4518a/"
             target="_blank"
           >
             <div>
               <LinkedinLogo size="1.5rem" />
+            </div>
+          </a>
+
+          <a href="https://twitter.com/wymlky" target="_blank">
+            <div>
+              <TwitterLogo size="1.5rem" />
             </div>
           </a>
         </div>
