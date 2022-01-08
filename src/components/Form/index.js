@@ -5,6 +5,7 @@ import { Primary } from "../Buttons";
 const Form = () => {
   return (
     <form className="w-[34rem] items-center  rounded-lg p-6 bg-slate-900 drop-shadow-md text-white">
+      {/* input field with label and error message */}
       <div className="p-3">
         <label className="block text-white text-sm  mb-2" for="username">
           Name
@@ -65,6 +66,7 @@ const Form = () => {
         <p className="text-red-500 text-xs italic mt-2">Error message here.</p>
       </div>
 
+      {/* button and text */}
       <div className="p-3 flex justify-between items-center">
         <p className="text-white text-sm">
           <>
