@@ -24,7 +24,7 @@ const LandingPage = () => {
                 name="search"
               />
             </div>
-            <Primary option="get started" link="signup" />
+            <Primary option="get started" link="register" />
           </div>
         </div>
 

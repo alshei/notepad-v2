@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 
 // options for dropdown links
 const options = [
-  { label: "edit profile", link: "/editprofile" },
-  { label: "settings", link: "/settings" },
-  { label: "log out", link: "/logout" },
+  { label: "edit profile", link: "editprofile" },
+  { label: "settings", link: "settings" },
+  { label: "log out", link: "logout" },
 ];
 
 // change icon for when toggling theme
@@ -48,12 +48,12 @@ const Header = () => {
         </button>
 
         {/* WHEN USER IS LOGGED IN - navigation links */}
-        <NavLink option="my notes" link="/mynotes" />
-        <NavLink option="create note" link="/createnote" />
+        <NavLink option="my notes" link="mynotes" />
+        <NavLink option="create note" link="createnote" />
 
         {/* WHEN USER IS NOT LOGGED IN - sign up and log in buttons */}
-        {/* <Primary option="sign up" link="#" />
-        <Secondary option="log in" link="#" /> */}
+        {/* <Primary option="sign up" link="signup" />
+        <Secondary option="log in" link="login" /> */}
 
         <div>
           {/* WHEN USER IS LOGGED IN - dropdown links */}
