@@ -35,8 +35,8 @@ const Header = () => {
         <div className="flex items-center bg-white rounded-lg p-1.5 drop-shadow-lg text-black">
           <MagnifyingGlass size="1.5rem" />
           <input
-            className="placeholder:text-slate-500 pl-1.5 pr-1.5 block sm:text-sm focus:outline-none"
-            placeholder="search notes..."
+            className="w-full placeholder:text-slate-500 pl-1.5 pr-1.5 block sm:text-sm focus:outline-none"
+            placeholder="search notes"
             type="text"
             name="search"
           />

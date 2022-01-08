@@ -16,10 +16,10 @@ const LandingPage = () => {
           </p>
 
           <div className="mt-10 flex items-center flex-row gap-5">
-            <div className="flex w-1/2 items-center bg-white rounded-lg p-2.5 drop-shadow-lg text-black">
+            <div className="w-1/2 items-center bg-white rounded-lg p-2.5 drop-shadow-lg text-black">
               <input
-                className="placeholder:text-slate-500 pl-1.5 pr-1.5 block focus:outline-none bg-transparent"
-                placeholder="enter email address..."
+                className="w-full placeholder:text-slate-500 pl-1.5 pr-1.5 block focus:outline-none bg-transparent"
+                placeholder="Enter email address"
                 type="text"
                 name="search"
               />
