@@ -15,7 +15,7 @@ const LoginScreen = () => {
           button={<Secondary option={"log in to account"} link="#" />}
           link={
             <Link to="register">
-              <p className="inline-flex text-sm text-bubblegum hover:text-white">
+              <p className="inline-flex text-sm text-apricot hover:text-white">
                 Sign up here!
               </p>
             </Link>
@@ -24,7 +24,7 @@ const LoginScreen = () => {
           <InputField
             label="Email"
             id="login-email"
-            placeholder="Enter email"
+            placeholder="Enter email address"
             type="email"
             errorMsg="Error here"
           />

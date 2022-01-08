@@ -31,7 +31,7 @@ const RegisterScreen = () => {
           <InputField
             label="Email"
             id="signup-email"
-            placeholder="Enter email"
+            placeholder="Enter email address"
             type="email"
             errorMsg="Error here"
           />
