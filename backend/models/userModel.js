@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
-const defaultIcon = require("../../src/images/default.png");
 
 const userSchema = mongoose.Schema(
   {
@@ -25,7 +24,8 @@ const userSchema = mongoose.Schema(
     icon: {
       type: String,
       required: true,
-      default: defaultIcon,
+      default:
+        "https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg",
     },
   },
   {
