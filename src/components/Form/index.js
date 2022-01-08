@@ -26,9 +26,9 @@ const Form = () => {
         <div className="w-full items-center bg-white rounded-lg p-2.5 drop-shadow-lg text-black">
           <input
             className="w-full placeholder:text-slate-500 pl-1.5 pr-1.5 block focus:outline-none bg-transparent"
-            id="name"
+            id="email"
             placeholder="Enter email address"
-            type="text"
+            type="email"
           />
         </div>
         <p className="text-red-500 text-xs italic mt-2">Error message here.</p>
@@ -41,7 +41,7 @@ const Form = () => {
         <div className="w-full items-center bg-white rounded-lg p-2.5 drop-shadow-lg text-black">
           <input
             className="w-full placeholder:text-slate-500 pl-1.5 pr-1.5 block focus:outline-none bg-transparent"
-            id="name"
+            id="password"
             placeholder="Create a password"
             type="text"
           />
@@ -56,7 +56,7 @@ const Form = () => {
         <div className="w-full items-center bg-white rounded-lg p-2.5 drop-shadow-lg text-black">
           <input
             className="w-full placeholder:text-slate-500 pl-1.5 pr-1.5 block focus:outline-none bg-transparent"
-            id="name"
+            id="password"
             placeholder="Confirm your password"
             type="text"
           />
