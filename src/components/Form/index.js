@@ -78,7 +78,7 @@ const Form = () => {
             </Link>
           </>
         </p>
-        <Primary option="create account" link="createnote" />
+        <Primary option="create account" link="#" />
       </div>
     </form>
   );
