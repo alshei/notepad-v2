@@ -14,7 +14,7 @@ const LoginScreen = () => {
           text="Don't have an account?"
           button={<Primary option={"log in"} link="#" />}
           link={
-            <Link to="login">
+            <Link to="register">
               <p className="inline-flex text-sm text-lavender hover:text-white">
                 Sign up here!
               </p>
