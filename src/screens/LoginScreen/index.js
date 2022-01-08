@@ -2,7 +2,7 @@ import React from "react";
 import Title from "../../components/Title";
 import Form from "../../components/Form";
 import InputField from "../../components/InputField";
-import { Primary } from "../../components/Buttons";
+import { Secondary } from "../../components/Buttons";
 import { Link } from "react-router-dom";
 
 const LoginScreen = () => {
@@ -12,10 +12,10 @@ const LoginScreen = () => {
       <div className="mt-10 pb-40 w-full flex justify-center gap-6 pl-56 pr-56">
         <Form
           text="Don't have an account?"
-          button={<Primary option={"log in"} link="#" />}
+          button={<Secondary option={"log in to account"} link="#" />}
           link={
             <Link to="register">
-              <p className="inline-flex text-sm text-lavender hover:text-white">
+              <p className="inline-flex text-sm text-bubblegum hover:text-white">
                 Sign up here!
               </p>
             </Link>
