@@ -24,7 +24,7 @@ app.get("/api/notes/:id", (req, res) => {
   res.send(note);
 });
 
-// port variable from .env file; if it is not available, default to 4000
-const PORT = process.env.PORT || 4000;
+// port variable from .env file; if it is not available, default to 5000
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, console.log(`Server started on Port ${PORT}!`));
