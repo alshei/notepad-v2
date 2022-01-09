@@ -4,7 +4,10 @@ import { Primary } from "../Buttons";
 
 const Form = (props) => {
   return (
-    <form className="w-[34rem] items-center  rounded-lg p-6 bg-slate-900 drop-shadow-md text-white">
+    <form
+      className="w-[34rem] items-center  rounded-lg p-6 bg-slate-900 drop-shadow-md text-white"
+      onSubmit={props.onSubmit}
+    >
       {props.children}
       {/* button and text */}
       <div className="p-3 flex justify-between items-center">

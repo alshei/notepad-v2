@@ -12,6 +12,7 @@ const InputField = (props) => {
           id={props.id}
           placeholder={props.placeholder}
           type={props.type}
+          onChange={props.onChange}
         />
       </div>
       <p className="text-red-500 text-xs italic mt-2">{props.errorMsg}</p>

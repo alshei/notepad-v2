@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Title from "../../components/Title";
 import Form from "../../components/Form";
 import InputField from "../../components/InputField";
@@ -6,13 +6,26 @@ import { Secondary } from "../../components/Buttons";
 import { Link } from "react-router-dom";
 
 const LoginScreen = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    console.log(email, password);
+  };
+
+  // useEffect(() => {
+  //   console.log(email, "<--email", password, "<--password");
+  // }, [email, password]);
+
   return (
     <div className="w-screen h-screen">
       <Title title="log in" />
       <div className="mt-10 pb-40 w-full flex justify-center gap-6 pl-56 pr-56">
         <Form
+          onSubmit={submitHandler}
           text="Don't have an account?"
-          button={<Secondary option={"log in to account"} link="#" />}
+          button={<Secondary option={"log in to account"} type="submit" />}
           link={
             <Link to="register">
               <p className="inline-flex text-sm text-apricot hover:text-white">
@@ -27,6 +40,8 @@ const LoginScreen = () => {
             placeholder="Enter email address"
             type="email"
             errorMsg="Error here"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
           <InputField
             label="Password"
@@ -34,6 +49,8 @@ const LoginScreen = () => {
             placeholder="Enter password"
             type="password"
             errorMsg="Error here"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
           />
         </Form>
       </div>
