@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Title from "../../components/Title";
 import Form from "../../components/Form";
 import InputField from "../../components/InputField";
@@ -8,7 +8,7 @@ import axios from "axios";
 import Loading from "../../components/Loading";
 import Error from "../../components/Error/error";
 
-const LoginScreen = () => {
+const LoginScreen = ({ history }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(false);
@@ -18,6 +18,7 @@ const LoginScreen = () => {
     e.preventDefault();
     console.log(email, password);
 
+    /* after user has submitted login information */
     try {
       const config = {
         header: {

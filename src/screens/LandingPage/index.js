@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import computer from "../../images/computer.png";
 import { motion } from "framer-motion";
 import { Primary } from "../../components/Buttons";
 
 const LandingPage = () => {
+  // /* redirects user that has successfully logged in to the My Notes page */
+  // useEffect(() => {
+  //   const userInfo = localStorage.getItem("userInfo");
+
+  //   if (userInfo) {
+  //     history.push("/mynotes");
+  //   }
+  // }, [history]);
+
   return (
     <div className="w-screen h-screen">
       <div className="w-full h-full flex flex-row items-center justify-around pl-56 pr-56">

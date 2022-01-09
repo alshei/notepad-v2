@@ -12,7 +12,7 @@ const RegisterScreen = () => {
       <div className="mt-10 pb-40 w-full flex justify-center gap-6 pl-56 pr-56">
         <Form
           text="Have an account?"
-          button={<Primary option={"create account"} link="#" />}
+          button={<Primary option={"create account"} type="submit" />}
           link={
             <Link to="login">
               <p className="inline-flex text-sm text-lavender hover:text-white">
@@ -44,7 +44,7 @@ const RegisterScreen = () => {
           />
           <InputField
             label="Confirm Password"
-            id="signup-pw-confirm"
+            id="confirm-password"
             placeholder="Confirm password"
             type="password"
             errorMsg="Error here"
