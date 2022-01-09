@@ -25,6 +25,7 @@ const LoginScreen = () => {
         },
       };
 
+      setError(false);
       setLoading(true);
 
       const { data } = await axios.post(
@@ -37,7 +38,6 @@ const LoginScreen = () => {
 
       localStorage.setItem("userInfo", JSON.stringify(data));
       setLoading(false);
-      setError(false);
     } catch (error) {
       setError(error.response.data.message);
       setLoading(false);
