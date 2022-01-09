@@ -6,6 +6,7 @@ import { Secondary } from "../../components/Buttons";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Loading from "../../components/Loading";
+import Error from "../../components/Error/error";
 
 const LoginScreen = () => {
   const [email, setEmail] = useState("");
@@ -38,6 +39,7 @@ const LoginScreen = () => {
       setLoading(false);
     } catch (error) {
       setError(error.response.data.message);
+      setLoading(false);
     }
   };
 
@@ -57,12 +59,13 @@ const LoginScreen = () => {
             </Link>
           }
         >
+          {error && <Error title="Oops!" text={error} />}
+
           <InputField
             label="Email"
             id="login-email"
             placeholder="Enter email address"
             type="email"
-            errorMsg="Error here"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -71,10 +74,10 @@ const LoginScreen = () => {
             id="login-password"
             placeholder="Enter password"
             type="password"
-            errorMsg="Error here"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
+
           {loading && <Loading />}
         </Form>
       </div>
