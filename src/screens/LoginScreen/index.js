@@ -5,6 +5,7 @@ import InputField from "../../components/InputField";
 import { Secondary } from "../../components/Buttons";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import Loading from "../../components/Loading";
 
 const LoginScreen = () => {
   const [email, setEmail] = useState("");
@@ -74,6 +75,7 @@ const LoginScreen = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
+          {loading && <Loading />}
         </Form>
       </div>
     </div>
