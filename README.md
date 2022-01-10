@@ -18,6 +18,6 @@ In-Progress:
 * dark/light mode toggle
 * responsive design for different screen sizes
 
-## Screenshots
+## Preview
 
 ![notesapppreview](https://user-images.githubusercontent.com/91434717/148709415-1fa40e43-5f21-4cec-b7b4-96715fece55e.gif)
