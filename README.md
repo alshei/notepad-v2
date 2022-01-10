@@ -20,4 +20,4 @@ In-Progress:
 
 ## Screenshots
 
-![preview](https://user-images.githubusercontent.com/91434717/148332962-6878f665-dd69-4576-8319-ff6d50b78d68.gif)
+![notesapppreview](https://user-images.githubusercontent.com/91434717/148709415-1fa40e43-5f21-4cec-b7b4-96715fece55e.gif)
