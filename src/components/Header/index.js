@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 const options = [
   { label: "edit profile", link: "editprofile" },
   { label: "settings", link: "settings" },
-  { label: "log out", link: "logout" },
 ];
 
 // change icon for when toggling theme

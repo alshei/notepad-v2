@@ -6,14 +6,16 @@ import { Secondary } from "../../components/Buttons";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Loading from "../../components/Loading";
-import Error from "../../components/Error/error";
+import Error from "../../components/Error";
 
 const LoginScreen = ({ history }) => {
+  /* states */
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
 
+  /* function called after clicking login button */
   const submitHandler = async (e) => {
     e.preventDefault();
     console.log(email, password);
@@ -37,8 +39,9 @@ const LoginScreen = ({ history }) => {
 
       console.log(data);
 
-      localStorage.setItem("userInfo", JSON.stringify(data));
       setLoading(false);
+
+      localStorage.setItem("userInfo", JSON.stringify(data));
     } catch (error) {
       setError(error.response.data.message);
       setLoading(false);

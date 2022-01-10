@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import icon from "../../images/icon.jpg";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 const Dropdown = ({ options }) => {
   const [showOptions, setShowOptions] = useState(false);
   const handleClick = () => {
     setShowOptions(!showOptions);
   };
+
+  const history = useHistory();
 
   return (
     <div className="flex items-center justify-end">
@@ -38,6 +40,19 @@ const Dropdown = ({ options }) => {
                     {option.label}
                   </Link>
                 ))}
+
+              {/* logout button w functionality */}
+              <button
+                className="w-full text-left text-white block px-4 py-2 text-sm hover:bg-slate-800"
+                role="menuitem"
+                tabindex="-1"
+                onClick={() => {
+                  localStorage.removeItem("userInfo");
+                  history.push("/");
+                }}
+              >
+                log out
+              </button>
             </div>
           </div>
         )}
