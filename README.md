@@ -7,12 +7,13 @@ Completed:
 * setup frontend
 * header, footer, landing page
 * "my notes" page
+* "sign up", "log in" pages
+* setup backend and database
 
 In-Progress:
 
 * overall functionality
-* setup backend and database
-* "sign up", "log in" pages
+* persistent user state
 * "create note" page
 * dark/light mode toggle
 * responsive design for different screen sizes
