@@ -1,13 +1,11 @@
-// import React, { useState, useEffect } from "react";
-import React from "react";
-// import axios from "axios";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import Title from "../../components/Title";
 import { Primary } from "../../components/Buttons";
 import Card from "../../components/Card";
-import notes from "../../data/notes";
 
 const MyNotes = () => {
-  // const [notes, setNotes] = useState([]);
+  const [notes, setNotes] = useState([]);
 
   // function to delete notes
   const deleteHandler = (id) => {
@@ -15,17 +13,17 @@ const MyNotes = () => {
     }
   };
 
-  // // connect frontend to backend and get notes
-  // const fetchNotes = async () => {
-  //   const { data } = await axios.get("/api/notes");
-  //   setNotes(data);
-  // };
+  // connect frontend to backend and get notes
+  const fetchNotes = async () => {
+    const { data } = await axios.get("/api/notes");
+    setNotes(data);
+  };
 
-  // console.log(notes);
+  console.log(notes);
 
-  // useEffect(() => {
-  //   fetchNotes();
-  // }, []);
+  useEffect(() => {
+    fetchNotes();
+  }, []);
 
   const user = "alina";
 
