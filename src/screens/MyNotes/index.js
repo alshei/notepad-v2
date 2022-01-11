@@ -16,10 +16,9 @@ const MyNotes = () => {
   // connect frontend to backend and get notes
   const fetchNotes = async () => {
     const { data } = await axios.get("/api/notes");
-    setNotes(data);
+    // console.log(JSON.parse(data.notes));
+    setNotes(JSON.parse(data.notes));
   };
-
-  console.log(notes);
 
   useEffect(() => {
     fetchNotes();
