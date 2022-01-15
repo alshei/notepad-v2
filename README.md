@@ -20,4 +20,8 @@ In-Progress:
 
 ## Preview
 
-![notesapppreview](https://user-images.githubusercontent.com/91434717/148709415-1fa40e43-5f21-4cec-b7b4-96715fece55e.gif)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/91434717/149610716-f299379b-ea6a-4beb-877d-78a86abcceb7.gif" />
+</p>
+
+
